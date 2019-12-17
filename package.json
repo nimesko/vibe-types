@@ -1,0 +1,57 @@
+{
+  "name": "vibe-types",
+  "version": "1.0.0",
+  "description": "Project that contains all code and explanations about the presentation of typescript",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "performance",
+    "presentation",
+    "javascript"
+  ],
+  "scripts": {
+    "why_performance_matters-render-single": "node src/why_performance_matters/render/render.js --single",
+    "why_performance_matters-render": "node src/why_performance_matters/render/render.js",
+    "why_performance_matters-calculator-ts": "ts-node src/why_performance_matters/calculator/calculator.ts",
+    "why_trustworthy-random-js": "node src/why_trustworthy/random/random.js",
+    "why_trustworthy-random-ts": "ts-node src/why_trustworthy/random/random.ts",
+    "why_trustworthy-streams-js": "node src/why_trustworthy/streams/streams.js",
+    "why_trustworthy-streams-ts": "ts-node src/why_trustworthy/streams/streams.ts"
+  },
+  "author": {
+    "name": "Rogerio Tristão Junior",
+    "email": "rogerio.tju@gmail.com",
+    "url": "https://github.com/nimesko"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@types/node": "^12.12.18",
+    "commitizen": "^4.0.3",
+    "husky": "^3.1.0",
+    "pretty-quick": "^2.0.1",
+    "ts-node": "^8.5.0",
+    "tslint": "^5.20.1",
+    "tslint-clean-code": "^0.2.10",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "jsdom": "^15.2.1",
+    "prettier": "^1.19.1",
+    "yargs": "^15.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
