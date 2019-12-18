@@ -5,8 +5,11 @@
   "license": "MIT",
   "keywords": [
     "typescript",
-    "presentation",
-    "javascript"
+    "javascript",
+    "node",
+    "types",
+    "conventional-commits",
+    "npm-scripts"
   ],
   "scripts": {
     "build": "tsc",
