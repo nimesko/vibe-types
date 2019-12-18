@@ -5,14 +5,11 @@
   "license": "MIT",
   "keywords": [
     "typescript",
-    "performance",
     "presentation",
     "javascript"
   ],
   "scripts": {
     "build": "tsc",
-    "why_performance_matters-render-single": "node src/why_performance_matters/render/render.js --single",
-    "why_performance_matters-render": "node src/why_performance_matters/render/render.js",
     "why_trustworthy-random-js": "node src/why_trustworthy/random/random.js",
     "why_trustworthy-random-ts": "ts-node src/why_trustworthy/random/random.ts",
     "why_trustworthy-streams-js": "node src/why_trustworthy/streams/streams.js",

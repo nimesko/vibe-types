@@ -14,10 +14,6 @@ Just execute `npm install` and run the samples!
 
 If you want to run, just see the **scripts** inside **package.json** or, if you want to see more details about want code can do, just read below and you will see.
 
-- why_performance_matters-render-single
-  - Run the emulated render engine using just one type of component
-- why_performance_matters-render
-  - Run the emulated render engine using a lot of types of components
 - why_trustworthy-random-js
   - Run one script that output's an random number
 - why_trustworthy-random-ts
