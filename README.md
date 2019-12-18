@@ -41,4 +41,4 @@ This is a repository that contains samples codes of the presentation.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/nimesko/vibe-types/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://raw.githubusercontent.com/nimesko/vibe-types/master/LICENSE) file for details
