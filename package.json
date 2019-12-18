@@ -10,18 +10,25 @@
     "javascript"
   ],
   "scripts": {
+    "build": "tsc",
     "why_performance_matters-render-single": "node src/why_performance_matters/render/render.js --single",
     "why_performance_matters-render": "node src/why_performance_matters/render/render.js",
     "why_trustworthy-random-js": "node src/why_trustworthy/random/random.js",
     "why_trustworthy-random-ts": "ts-node src/why_trustworthy/random/random.ts",
     "why_trustworthy-streams-js": "node src/why_trustworthy/streams/streams.js",
     "why_trustworthy-streams-ts": "ts-node src/why_trustworthy/streams/streams.ts",
-    "type-person-ts": "ts-node src/type/person/person.ts"
+    "type-person-ts": "ts-node src/type/person/person.ts",
+    "type-geometry-ts": "ts-node src/type/geometry/geometry.ts"
   },
   "author": {
     "name": "Rogerio Tristão Junior",
     "email": "rogerio.tju@gmail.com",
     "url": "https://github.com/nimesko"
+  },
+  "dependencies": {
+    "jsdom": "^15.2.1",
+    "prettier": "^1.19.1",
+    "yargs": "^15.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
@@ -37,11 +44,6 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.7.2"
-  },
-  "dependencies": {
-    "jsdom": "^15.2.1",
-    "prettier": "^1.19.1",
-    "yargs": "^15.0.2"
   },
   "husky": {
     "hooks": {
