@@ -1,19 +1,19 @@
-type Id = string | number;
+export type Id = string | number;
 
-type PersonCategory = "fisica" | "juridica";
-type PersonDocuments = "cpf" | "rg" | "cnh" | "passport";
-type PersonDocument = Partial<Record<PersonDocuments, string>>;
+export type PersonCategory = "fisica" | "juridica";
+export type PersonDocuments = "cpf" | "rg" | "cnh" | "passport";
+export type PersonDocument = Partial<Record<PersonDocuments, string>>;
 
-interface Entity {
+export interface Entity {
   id: Id;
 }
 
-type Person = {
+export type Person = {
   name: string;
-  category: PersonCategory;
+  category?: PersonCategory;
   relationship?: Person[];
   [propname: string]: any;
-} & Entity &
+} & Partial<Entity> &
   PersonDocument;
 
 const eu: Person = {

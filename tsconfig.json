@@ -5,7 +5,9 @@
     "module": "commonjs",
     "incremental": true,
     "lib": ["esnext", "dom"],
-    "outDir": "dist"
+    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

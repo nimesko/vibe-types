@@ -28,7 +28,9 @@ If you want to run, just see the **scripts** inside **package.json** or, if you 
   - Run the version of why_trustworthy-streams in TypeScript
 - type-person-ts
   - Run a simple example of how to use the types
-- type-geometry-ts
+- type-picture-ts
+  - Run a simple example of how to use the types
+- type-decorators-ts
   - Run a simple example of how to use the types
 
 ## Contributing

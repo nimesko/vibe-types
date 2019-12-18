@@ -18,7 +18,8 @@
     "why_trustworthy-streams-js": "node src/why_trustworthy/streams/streams.js",
     "why_trustworthy-streams-ts": "ts-node src/why_trustworthy/streams/streams.ts",
     "type-person-ts": "ts-node src/type/person/person.ts",
-    "type-geometry-ts": "ts-node src/type/geometry/geometry.ts"
+    "type-picture-ts": "ts-node src/type/picture/picture.ts",
+    "type-decorators-ts": "ts-node src/type/decorators/decorators.ts"
   },
   "author": {
     "name": "Rogerio Tristão Junior",
