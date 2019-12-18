@@ -4,7 +4,7 @@ const yargs = require("yargs");
 
 const { JSDOM } = jsdom;
 const w = new JSDOM().window;
-const pow = 6;
+const iterations = 1000000;
 const conditions = 7;
 
 let render = function(element, props) {
@@ -76,16 +76,19 @@ let renderApplication = function(seedRandom) {
 renderApplication = performance.timerify(renderApplication);
 
 let bridge = function() {
-  const total = Math.pow(10, pow);
-  console.log(`Running ${total} iterations\n`);
+  console.log(
+    `Running ${
+      yargs.argv.single ? "as single with " : "with"
+    } ${iterations} iterations\n`
+  );
   if (yargs.argv.single) {
     const seed = ~~((Math.random() * 10000) % conditions);
-    for (let i = 0; i < total; i++) {
+    for (let i = 0; i < iterations; i++) {
       const fakeSeed = i % conditions;
       renderApplication(seed);
     }
   } else {
-    for (let i = 0; i < total; i++) {
+    for (let i = 0; i < iterations; i++) {
       const seed = i % conditions;
       renderApplication(seed);
     }
@@ -112,9 +115,8 @@ const obs = new PerformanceObserver((list, observer) => {
   });
   for (const [key, { count, sum }] of average) {
     const averageResult = Math.round((sum / count) * 100) / 100;
-    const times = `${count}`.padStart(pow, "0");
     console.log(
-      `Function '${key}' executed ${times} times with ${averageResult} ms at each call`
+      `Function '${key}' executed ${count} times with ${averageResult} ms at each call`
     );
   }
   console.log("\nEnd of benchmark\n");

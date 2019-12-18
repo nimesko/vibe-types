@@ -12,11 +12,11 @@
   "scripts": {
     "why_performance_matters-render-single": "node src/why_performance_matters/render/render.js --single",
     "why_performance_matters-render": "node src/why_performance_matters/render/render.js",
-    "why_performance_matters-calculator-ts": "ts-node src/why_performance_matters/calculator/calculator.ts",
     "why_trustworthy-random-js": "node src/why_trustworthy/random/random.js",
     "why_trustworthy-random-ts": "ts-node src/why_trustworthy/random/random.ts",
     "why_trustworthy-streams-js": "node src/why_trustworthy/streams/streams.js",
-    "why_trustworthy-streams-ts": "ts-node src/why_trustworthy/streams/streams.ts"
+    "why_trustworthy-streams-ts": "ts-node src/why_trustworthy/streams/streams.ts",
+    "type-person-ts": "ts-node src/type/person/person.ts"
   },
   "author": {
     "name": "Rogerio Tristão Junior",
