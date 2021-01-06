@@ -8,7 +8,6 @@
     "javascript",
     "node",
     "types",
-    "conventional-commits",
     "npm-scripts"
   ],
   "scripts": {
@@ -32,11 +31,7 @@
     "yargs": "^15.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
     "@types/node": "^12.12.18",
-    "commitizen": "^4.0.3",
-    "husky": "^3.1.0",
     "pretty-quick": "^2.0.1",
     "ts-node": "^8.5.0",
     "tslint": "^5.20.1",
@@ -45,16 +40,5 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.7.2"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "pretty-quick --staged"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
